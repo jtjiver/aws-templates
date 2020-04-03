@@ -1,0 +1,17 @@
+{
+    "Comment": "Create a basic Route53 Alias record set",
+    "Changes": [
+      {
+        "Action": "CREATE",
+        "ResourceRecordSet": {
+          "Name": "[[DNS_DOMAIN_NAME]]",
+          "Type": "A",
+          "AliasTarget": {
+            "HostedZoneId": "[[CLOUDFRONT_HOSTED_ZONE]]",
+            "DNSName": "[[CLOUDFRONT_DNS]]",
+            "EvaluateTargetHealth": false
+          }
+        }
+      }
+    ]
+  }
