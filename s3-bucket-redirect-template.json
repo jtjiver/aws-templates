@@ -1,0 +1,5 @@
+{
+    "RedirectAllRequestsTo": {
+        "HostName": "[[REDIRECT-TO-BUCKET-NAME]]"
+    }
+}
