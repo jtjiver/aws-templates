@@ -10,8 +10,8 @@ export class AmplifyInfraStack extends cdk.Stack {
       sourceCodeProvider: new amplify.GitHubSourceCodeProvider({
         owner: "jtjiver",
         repository: "amplify-react-test-repo",
-        oauthToken: cdk.SecretValue.secretsManager("aws-github", {
-          jsonField: "[Secret-Key]",
+        oauthToken: cdk.SecretValue.secretsManager("aws-github-token", {
+          jsonField: "[oauthToken]",
         }),
       }),
     });
