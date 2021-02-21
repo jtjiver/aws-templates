@@ -11,7 +11,7 @@ export class AmplifyInfraStack extends cdk.Stack {
         owner: "jtjiver",
         repository: "amplify-react-test-repo",
         oauthToken: cdk.SecretValue.secretsManager("aws-github-token", {
-          jsonField: "[oauthToken]",
+          jsonField: "oauthToken",
         }),
       }),
     });
