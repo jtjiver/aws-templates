@@ -11,10 +11,10 @@ REACTCONFIG="{\
 AWSCLOUDFORMATIONCONFIG="{\
 \"configLevel\":\"project\",\
 \"useProfile\":true,\
-\"profileName\":\"default\"\
+\"profileName\":\"aws-amplify\"\
 }"
 AMPLIFY="{\
-\"projectName\":\"nextamplified\",\
+\"projectName\":\"nextamplified-headless\",\
 \"envName\":\"dev\",\
 \"defaultEditor\":\"code\"\
 }"
